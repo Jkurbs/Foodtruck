@@ -13,6 +13,10 @@
 		6DA8A905240C9A75004E313F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8A903240C9A75004E313F /* Main.storyboard */; };
 		6DA8A907240C9A7B004E313F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8A906240C9A7B004E313F /* Assets.xcassets */; };
 		6DA8A90A240C9A7B004E313F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8A908240C9A7B004E313F /* LaunchScreen.storyboard */; };
+		B646A54D240C9FED00C3A978 /* JSONUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646A54C240C9FED00C3A978 /* JSONUser.swift */; };
+		B646A550240CA00E00C3A978 /* FoodTruck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B646A54E240CA00E00C3A978 /* FoodTruck.xcdatamodeld */; };
+		B646A552240CA03500C3A978 /* User+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646A551240CA03500C3A978 /* User+Convenience.swift */; };
+		B646A555240CA05600C3A978 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646A554240CA05600C3A978 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		6DA8A906240C9A7B004E313F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DA8A909240C9A7B004E313F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DA8A90B240C9A7B004E313F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B646A54C240C9FED00C3A978 /* JSONUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUser.swift; sourceTree = "<group>"; };
+		B646A54F240CA00E00C3A978 /* FoodTruck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodTruck.xcdatamodel; sourceTree = "<group>"; };
+		B646A551240CA03500C3A978 /* User+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Convenience.swift"; sourceTree = "<group>"; };
+		B646A554240CA05600C3A978 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		6DA8A8FC240C9A75004E313F /* FoodTruck */ = {
 			isa = PBXGroup;
 			children = (
-				6DA8A8FD240C9A75004E313F /* AppDelegate.swift */,
-				6DA8A8FF240C9A75004E313F /* SceneDelegate.swift */,
+				B646A54B240C9FD600C3A978 /* Model */,
+				B646A549240C9FC000C3A978 /* Resources */,
 				6DA8A901240C9A75004E313F /* ViewController.swift */,
-				6DA8A903240C9A75004E313F /* Main.storyboard */,
-				6DA8A906240C9A7B004E313F /* Assets.xcassets */,
-				6DA8A908240C9A7B004E313F /* LaunchScreen.storyboard */,
+				B646A553240CA04C00C3A978 /* CoreDataStack */,
+				B646A54A240C9FC700C3A978 /* Storyboards */,
 				6DA8A90B240C9A7B004E313F /* Info.plist */,
 			);
 			path = FoodTruck;
+			sourceTree = "<group>";
+		};
+		B646A549240C9FC000C3A978 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8A8FD240C9A75004E313F /* AppDelegate.swift */,
+				6DA8A8FF240C9A75004E313F /* SceneDelegate.swift */,
+				6DA8A906240C9A7B004E313F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B646A54A240C9FC700C3A978 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8A908240C9A7B004E313F /* LaunchScreen.storyboard */,
+				6DA8A903240C9A75004E313F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B646A54B240C9FD600C3A978 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B646A54C240C9FED00C3A978 /* JSONUser.swift */,
+				B646A551240CA03500C3A978 /* User+Convenience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B646A553240CA04C00C3A978 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				B646A54E240CA00E00C3A978 /* FoodTruck.xcdatamodeld */,
+				B646A554240CA05600C3A978 /* CoreDataStack.swift */,
+			);
+			path = CoreDataStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B646A555240CA05600C3A978 /* CoreDataStack.swift in Sources */,
 				6DA8A902240C9A75004E313F /* ViewController.swift in Sources */,
+				B646A54D240C9FED00C3A978 /* JSONUser.swift in Sources */,
+				B646A552240CA03500C3A978 /* User+Convenience.swift in Sources */,
 				6DA8A8FE240C9A75004E313F /* AppDelegate.swift in Sources */,
+				B646A550240CA00E00C3A978 /* FoodTruck.xcdatamodeld in Sources */,
 				6DA8A900240C9A75004E313F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B646A54E240CA00E00C3A978 /* FoodTruck.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B646A54F240CA00E00C3A978 /* FoodTruck.xcdatamodel */,
+			);
+			currentVersion = B646A54F240CA00E00C3A978 /* FoodTruck.xcdatamodel */;
+			path = FoodTruck.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6DA8A8F2240C9A75004E313F /* Project object */;
 }
