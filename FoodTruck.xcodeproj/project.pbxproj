@@ -13,7 +13,7 @@
 		6DA8A905240C9A75004E313F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8A903240C9A75004E313F /* Main.storyboard */; };
 		6DA8A907240C9A7B004E313F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8A906240C9A7B004E313F /* Assets.xcassets */; };
 		6DA8A90A240C9A7B004E313F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8A908240C9A7B004E313F /* LaunchScreen.storyboard */; };
-		B646A54D240C9FED00C3A978 /* UserRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646A54C240C9FED00C3A978 /* UserRepresentation.swift */; };
+		B646A54D240C9FED00C3A978 /* JSONUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646A54C240C9FED00C3A978 /* JSONUser.swift */; };
 		B646A550240CA00E00C3A978 /* FoodTruck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B646A54E240CA00E00C3A978 /* FoodTruck.xcdatamodeld */; };
 		B646A552240CA03500C3A978 /* User+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646A551240CA03500C3A978 /* User+Convenience.swift */; };
 		B646A555240CA05600C3A978 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646A554240CA05600C3A978 /* CoreDataStack.swift */; };
@@ -28,7 +28,7 @@
 		6DA8A906240C9A7B004E313F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DA8A909240C9A7B004E313F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DA8A90B240C9A7B004E313F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B646A54C240C9FED00C3A978 /* UserRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepresentation.swift; sourceTree = "<group>"; };
+		B646A54C240C9FED00C3A978 /* JSONUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUser.swift; sourceTree = "<group>"; };
 		B646A54F240CA00E00C3A978 /* FoodTruck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodTruck.xcdatamodel; sourceTree = "<group>"; };
 		B646A551240CA03500C3A978 /* User+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Convenience.swift"; sourceTree = "<group>"; };
 		B646A554240CA05600C3A978 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		B646A54B240C9FD600C3A978 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B646A54C240C9FED00C3A978 /* UserRepresentation.swift */,
+				B646A54C240C9FED00C3A978 /* JSONUser.swift */,
 				B646A551240CA03500C3A978 /* User+Convenience.swift */,
 			);
 			path = Model;
@@ -184,7 +184,7 @@
 			files = (
 				B646A555240CA05600C3A978 /* CoreDataStack.swift in Sources */,
 				6DA8A902240C9A75004E313F /* ViewController.swift in Sources */,
-				B646A54D240C9FED00C3A978 /* UserRepresentation.swift in Sources */,
+				B646A54D240C9FED00C3A978 /* JSONUser.swift in Sources */,
 				B646A552240CA03500C3A978 /* User+Convenience.swift in Sources */,
 				6DA8A8FE240C9A75004E313F /* AppDelegate.swift in Sources */,
 				B646A550240CA00E00C3A978 /* FoodTruck.xcdatamodeld in Sources */,

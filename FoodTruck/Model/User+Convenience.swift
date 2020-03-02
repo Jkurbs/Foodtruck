@@ -12,10 +12,10 @@ import CoreData
 
 
 extension User {
-    var userRepresentation: UserRepresentation? {
+    var jsonUser: JSONUser? {
         guard let username = username, let password = password else { return nil }
         
-        return UserRepresentation(username: username, password: password)
+        return JSONUser(username: username, password: password)
     }
     
     
@@ -26,8 +26,8 @@ extension User {
     }
     
     
-    @discardableResult convenience init?(userRepresentation: UserRepresentation,context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
-        guard let username = userRepresentation.username , let password = userRepresentation.password else { return nil }
+    @discardableResult convenience init?(jsonUser: JSONUser,context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
+        guard let username = jsonUser.username , let password = jsonUser.password else { return nil }
         
         self.init(username:username,
                   password:password,

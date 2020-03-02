@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UserRepresentation {
+struct JSONUser {
     let username: String?
     let password: String?
 }
