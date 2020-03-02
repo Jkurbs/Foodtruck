@@ -1,24 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6R9-FE-Veb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="M6a-pH-gBv">
+                                <rect key="frame" x="20" y="155" width="374" height="520"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ie6-KY-QMp">
+                                        <rect key="frame" x="21" y="0.0" width="332.5" height="69"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Food truck " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpM-aj-yGa">
+                                                <rect key="frame" x="0.0" y="0.0" width="332.5" height="39.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a choice below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjp-B6-ASR">
+                                                <rect key="frame" x="86.5" y="47.5" width="159" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ha5-s9-0zJ">
+                                        <rect key="frame" x="0.0" y="112" width="374" height="408"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRR-Q5-XOw">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="374" id="aWF-aN-FtG"/>
+                                                    <constraint firstAttribute="height" constant="200" id="vw3-oZ-igz"/>
+                                                </constraints>
+                                                <state key="normal" title="Trucker"/>
+                                                <connections>
+                                                    <action selector="choiceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="259-ym-ov0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6m-Yy-2cQ">
+                                                <rect key="frame" x="0.0" y="208" width="374" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="374" id="CYR-1t-ui9"/>
+                                                    <constraint firstAttribute="height" constant="200" id="Gen-cu-MAL"/>
+                                                </constraints>
+                                                <state key="normal" title="Foodie"/>
+                                                <connections>
+                                                    <action selector="choiceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ujz-gj-p6w"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M6a-pH-gBv" secondAttribute="trailing" constant="20" id="4Kz-u7-Z9V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M6a-pH-gBv" secondAttribute="bottom" constant="187" id="5cU-4g-Y6U"/>
+                            <constraint firstItem="M6a-pH-gBv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="73b-HB-laa"/>
+                            <constraint firstItem="M6a-pH-gBv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ofd-hU-ZUF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ea0-qZ-sCz"/>
+                    <connections>
+                        <outletCollection property="choiceButtons" destination="C6m-Yy-2cQ" collectionClass="NSMutableArray" id="ZJh-6b-y62"/>
+                        <outletCollection property="choiceButtons" destination="kRR-Q5-XOw" collectionClass="NSMutableArray" id="pRM-m0-ENq"/>
+                        <segue destination="Gpz-Xw-XDe" kind="show" identifier="AuthSegue" id="WY2-zA-lVh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="852" y="100"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="acO-bm-x8L">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="Gpz-Xw-XDe" customClass="SignUpViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tw1-39-hks">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEv-uU-dRz">
+                                <rect key="frame" x="20" y="156" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OHN-te-c6g" firstAttribute="trailing" secondItem="UEv-uU-dRz" secondAttribute="trailing" constant="20" id="Qsc-tB-ZyA"/>
+                            <constraint firstItem="UEv-uU-dRz" firstAttribute="top" secondItem="OHN-te-c6g" secondAttribute="top" constant="68" id="mvL-fW-GKH"/>
+                            <constraint firstItem="UEv-uU-dRz" firstAttribute="leading" secondItem="OHN-te-c6g" secondAttribute="leading" constant="20" id="z4E-Fa-RZP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OHN-te-c6g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fwd-m5-6Xj"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="UEv-uU-dRz" id="aTN-9y-heN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jI-2w-XHT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631.8840579710147" y="99.776785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SHH-Ff-X3D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6R9-FE-Veb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FCk-js-jBe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e6G-hV-Ctb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kB-nQ-tqo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </scene>
     </scenes>
 </document>
